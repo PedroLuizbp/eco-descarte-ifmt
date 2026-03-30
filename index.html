@@ -2,35 +2,89 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>E-Lixo Cuiabá - Onde Descartar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descarte de E-Lixo - IFMT Cuiabá</title>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: auto; padding: 20px; background-color: #f4f9f4; }
-        h1 { color: #2e7d32; border-bottom: 2px solid #2e7d32; }
-        .card { background: white; padding: 15px; margin-bottom: 10px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        .tag { display: inline-block; background: #e8f5e9; color: #2e7d32; padding: 2px 8px; border-radius: 4px; font-size: 0.8em; font-weight: bold; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; max-width: 850px; margin: auto; padding: 20px; background-color: #f0f4f0; color: #333; }
+        
+        /* Cabeçalho com Logo */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: 25px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        
+        .logo-ifmt {
+            height: 70px;
+            margin-right: 20px;
+        }
+
+        .header-text h1 { color: #2e7d32; margin: 0; font-size: 1.5rem; border: none; }
+        .header-text p { margin: 5px 0 0; color: #666; font-weight: 500; }
+
+        /* Conteúdo */
+        h2 { color: #1b5e20; border-left: 5px solid #2e7d32; padding-left: 10px; margin-top: 30px; }
+        .card { background: white; padding: 18px; margin-bottom: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.08); border-left: 4px solid #4caf50; }
+        .tag { display: inline-block; background: #e8f5e9; color: #2e7d32; padding: 3px 10px; border-radius: 20px; font-size: 0.75em; font-weight: bold; text-transform: uppercase; margin-bottom: 8px; }
+        h3 { margin: 5px 0; color: #2e7d32; }
+
+        /* Rodapé de Identificação */
+        .footer {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #2e7d32;
+            color: white;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+        .footer p { margin: 5px 0; }
+        .footer b { color: #c8e6c9; }
     </style>
 </head>
 <body>
-    <h1>♻️ Descarte Eletrônico em Cuiabá</h1>
-    <p>Projeto de Extensão - Engenharia da Computação</p>
+    
+    <div class="header">
+        <img src="ifmt_cuiaba.png" alt="Logo IFMT Cuiabá" class="logo-ifmt">
+        <div class="header-text">
+            <h1>Guia de Descarte de Lixo Eletrônico</h1>
+            <p>Cuiabá - Mato Grosso</p>
+        </div>
+    </div>
+
+    <h2>📍 Onde descartar seus eletrônicos</h2>
 
     <div class="card">
-        <span class="tag">SHOPPING</span>
-        <h3>Shopping Estação / Pantanal</h3>
-        <p>Aceitam: Celulares, tablets, cabos, pilhas e pequenos eletrônicos.</p>
+        <span class="tag">Shoppings</span>
+        <h3>Shopping Estação e Pantanal</h3>
+        <p>Pontos de coleta para itens pequenos: celulares, pilhas, baterias e cabos. Geralmente localizados nos subsolos ou próximos às entradas de serviço.</p>
     </div>
 
     <div class="card">
-        <span class="tag">EMPRESA ESPECIALIZADA</span>
+        <span class="tag">Especializado</span>
         <h3>EcoDescarte (Bairro Poção)</h3>
-        <p>Endereço: Av. Des. Antonio Quirino de Araujo, 1000.</p>
-        <p>Contato: (65) 99322-6174</p>
+        <p><b>Endereço:</b> Av. Des. Antonio Quirino de Araujo, 1000.<br>
+           Recebem computadores, monitores e periféricos diversos. <br>
+           <b>Contato:</b> (65) 99322-6174</p>
     </div>
 
     <div class="card">
-        <span class="tag">PÚBLICO</span>
+        <span class="tag">Serviço Público</span>
         <h3>Ecoponto CPA 3</h3>
-        <p>Ideal para monitores CRT, CPUs e eletrodomésticos maiores.</p>
+        <p>Local adequado para eletrônicos de grande porte e outros materiais inservíveis. Mantido pela prefeitura de Cuiabá.</p>
     </div>
+
+    <div class="footer">
+        <p><b>Projeto de Extensão - Ciências do Ambiente</b></p>
+        <p>Professora Orientadora: <b>Simone Raquel Caldeira Moreira da Silva</b></p>
+        <p>Desenvolvido pelo <b>2º Semestre de Engenharia da Computação</b></p>
+        <p>IFMT Campus Cuiabá - Cel. Octayde Jorge da Silva</p>
+    </div>
+
 </body>
 </html>
