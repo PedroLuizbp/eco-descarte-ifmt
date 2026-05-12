@@ -30,6 +30,7 @@
 
         .logo-if {
             max-width: 200px;
+            height: auto;
             margin-bottom: 1rem;
         }
 
@@ -45,6 +46,19 @@
         h1 {
             color: var(--ifmt-verde);
             margin-top: 0;
+            font-size: 1.8rem;
+        }
+
+        .event-banner {
+            background-color: #2e7d32;
+            color: white;
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            text-align: center;
         }
 
         .highlight-box {
@@ -55,35 +69,27 @@
             border-radius: 0 10px 10px 0;
         }
 
-        .btn-acao {
-            display: inline-block;
-            background-color: var(--ifmt-verde);
-            color: white;
-            padding: 12px 25px;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: bold;
-            transition: transform 0.2s;
-        }
-
-        .btn-acao:hover {
-            transform: scale(1.05);
-            background-color: #246627;
-        }
-
-        .footer {
-            text-align: center;
-            font-size: 0.9rem;
-            color: #777;
-            margin-top: 3rem;
-            padding-bottom: 2rem;
-        }
-
         .info-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 20px;
             margin-top: 20px;
+        }
+
+        .info-card {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 10px;
+            border-top: 3px solid var(--ifmt-verde);
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 0.85rem;
+            color: #777;
+            margin-top: 3rem;
+            padding: 2rem;
+            background: #eee;
         }
 
         @media (max-width: 600px) {
@@ -94,38 +100,40 @@
 <body>
 
     <header>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Instituto_Federal_Marca_2015.svg/1200px-Instituto_Federal_Marca_2015.svg.png" alt="Logo IFMT" class="logo-if">
+        <img src="logo_ifmt.png" alt="Logo IFMT" class="logo-if">
         <p><strong>Campus Cuiabá - Cel. Octayde Jorge da Silva</strong></p>
     </header>
 
     <div class="container">
-        <h1>🔋 Projeto de Extensão: Descarte Consciente</h1>
-        <p>Este projeto é uma iniciativa dos alunos de <strong>Engenharia da Computação</strong>, desenvolvida na disciplina de <strong>Ciências Ambientais</strong>.</p>
+        <div class="event-banner">
+            📍 Integrante da Semana da Engenharia Elétrica e Automação
+        </div>
+
+        <h1>🔋 Projeto de Extensão: Recolhimento de Pilhas</h1>
+        
+        <p>Iniciativa da turma de <strong>Engenharia da Computação</strong> desenvolvida para a disciplina de <strong>Ciências Ambientais</strong>.</p>
         
         <div class="highlight-box">
-            <h3>Por que descartar corretamente?</h3>
-            <p>Pilhas contêm metais pesados que podem contaminar o solo e o lençol freático. No Campus Octayde, criamos pontos estratégicos para você fazer o descarte seguro!</p>
+            <h3>Por que participar?</h3>
+            <p>O descarte incorreto de pilhas libera metais tóxicos no meio ambiente. Durante a semana do evento, teremos pontos de coleta exclusivos para facilitar o descarte correto por toda a comunidade acadêmica.</p>
         </div>
 
         <div class="info-grid">
-            <div>
+            <div class="info-card">
+                <h3>📅 Quando?</h3>
+                <p>De <strong>01 a 03 de Junho</strong><br>Durante a programação da Semana da Engenharia Elétrica e Automação.</p>
+            </div>
+            <div class="info-card">
                 <h3>📍 Onde encontrar?</h3>
-                <p>As caixas de coleta estão localizadas nos principais blocos e na entrada do campus.</p>
+                <p>As caixas de coleta estão localizadas nas <strong>entradas principais</strong> do Campus Octayde.</p>
             </div>
-            <div>
-                <h3>📅 Período</h3>
-                <p>O recolhimento é contínuo durante o semestre letivo.</p>
-            </div>
-        </div>
-
-        <div style="text-align: center; margin-top: 30px;">
-            <a href="#" class="btn-acao">Ver Mapa dos Pontos de Coleta</a>
         </div>
     </div>
 
     <div class="footer">
-        <p>Organização: Turma de Eng. da Computação - Matéria: Ciências Ambientais</p>
-        <p>© 2024 IFMT Cuiabá</p>
+        <p><strong>Organização:</strong> Turma de Engenharia da Computação</p>
+        <p><strong>Matéria:</strong> Ciências Ambientais</p>
+        <p>© 2026 IFMT - Campus Cuiabá Cel. Octayde Jorge da Silva</p>
     </div>
 
 </body>
