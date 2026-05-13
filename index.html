@@ -47,18 +47,27 @@
             color: var(--ifmt-verde);
             margin-top: 0;
             font-size: 1.8rem;
+            text-align: center;
         }
 
-        .event-banner {
-            background-color: #2e7d32;
-            color: white;
-            padding: 10px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            font-weight: bold;
-            text-transform: uppercase;
-            font-size: 0.9rem;
-            text-align: center;
+        .image-placeholder {
+            width: 100%;
+            height: auto;
+            min-height: 300px;
+            background-color: #eee;
+            border: 2px dashed #ccc;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+            overflow: hidden;
+        }
+
+        .image-placeholder img {
+            width: 100%;
+            height: auto;
+            display: block;
         }
 
         .highlight-box {
@@ -67,6 +76,19 @@
             padding: 1.5rem;
             margin: 2rem 0;
             border-radius: 0 10px 10px 0;
+        }
+
+        .highlight-box h3 {
+            margin-top: 0;
+            color: var(--ifmt-vermelho);
+        }
+
+        .highlight-box ul {
+            padding-left: 20px;
+        }
+
+        .highlight-box li {
+            margin-bottom: 10px;
         }
 
         .info-grid {
@@ -105,23 +127,30 @@
     </header>
 
     <div class="container">
-        <div class="event-banner">
-            📍 Integrante da Semana da Engenharia Elétrica e Automação
-        </div>
-
         <h1>🔋 Projeto de Extensão: Recolhimento de Pilhas</h1>
         
-        <p>Iniciativa da turma de <strong>Engenharia da Computação</strong> desenvolvida para a disciplina de <strong>Ciências Ambientais</strong>.</p>
+        <p style="text-align: center;">Iniciativa da turma de <strong>Engenharia da Computação</strong> desenvolvida para a disciplina de <strong>Ciências Ambientais</strong>.</p>
+
+        <!-- LUGAR PARA A IMAGEM DAS CAIXAS -->
+        <div class="image-placeholder">
+            <img src="caixas_recolhimento.jpg" alt="Caixas de Recolhimento de Pilhas no Campus" onerror="this.style.display='none'; this.parentNode.innerHTML='<p>Insira aqui a imagem das caixas (caixas_recolhimento.jpg)</p>';">
+        </div>
         
         <div class="highlight-box">
-            <h3>Por que participar?</h3>
-            <p>O descarte incorreto de pilhas libera metais tóxicos no meio ambiente. Durante a semana do evento, teremos pontos de coleta exclusivos para facilitar o descarte correto por toda a comunidade acadêmica.</p>
+            <h3>Por que descartar pilhas corretamente? 🔋♻️</h3>
+            <ul>
+                <li><strong>Evita a Contaminação:</strong> Pilhas contêm metais pesados (mercúrio, chumbo e cádmio) que vazam no lixo comum, contaminando o solo e a água.</li>
+                <li><strong>Protege sua Saúde:</strong> Esses componentes são tóxicos e, ao entrarem na cadeia alimentar, podem causar doenças graves no sistema nervoso e órgãos vitais.</li>
+                <li><strong>Estimula a Reciclagem:</strong> Materiais como aço e zinco podem ser recuperados e transformados em fertilizantes, evitando a mineração desnecessária.</li>
+                <li><strong>É Prático:</strong> Basta separar as pilhas em um pote e entregá-las em nossos postos de coleta.</li>
+            </ul>
+            <p><strong>O lixo comum não é o lugar delas. Proteja o meio ambiente com um pequeno gesto!</strong></p>
         </div>
 
         <div class="info-grid">
             <div class="info-card">
-                <h3>📅 Quando?</h3>
-                <p>De <strong>01 a 03 de Junho</strong><br>Durante a programação da Semana da Engenharia Elétrica e Automação.</p>
+                <h3>📅 Período</h3>
+                <p>De <strong>01 a 03 de Junho</strong>.</p>
             </div>
             <div class="info-card">
                 <h3>📍 Onde encontrar?</h3>
